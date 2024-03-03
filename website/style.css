@@ -1,0 +1,105 @@
+html {
+    height: 100%;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: white;
+    background: linear-gradient(#141e30, #243b55);
+  }
+  
+  #app {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, .5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+    border-radius: 10px;
+  }
+  
+  #app h2,
+  .title {
+    margin: 0 0 30px;
+    color: #fff;
+    text-align: center;
+  }
+  
+  #app .user-input {
+    position: relative;
+  }
+  
+  #app .user-input input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+  }
+  
+  #app form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #03e9f4;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin: 10px 0;
+    letter-spacing: 4px
+  }
+  
+  #app a:hover {
+    background-color: #148e94;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #0f9096,
+      0 0 25px #129aa1,
+      0 0 50px #24666a,
+      0 0 100px #1abac3;
+  }
+  
+  #app a span {
+    position: absolute;
+    display: block;
+  }
+  
+  #date::before {
+    content: "Date : ";
+    letter-spacing: 2px;
+  }
+  
+  #temp::before {
+    content: "Temperature : ";
+    letter-spacing: 2px;
+  }
+  
+  #content::before {
+    content: "You're feeling : ";
+    letter-spacing: 2px;
+  }
+  
+  #entryHolder {
+    border: 1px solid #0f9096;
+    border-radius: 5px;
+    padding-left: 20px;
+  }
+  
+  #entryHolder>* {
+    padding: 10px;
+  }
+  
+  .results {
+    margin-top: 20px;
+  }
